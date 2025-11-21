@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,64 +9,70 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav container">
             <a href="#" class="logo">EduCoach</a>
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#roles">Roles</a></li>
-                <li><a href="#contact" class="btn-primary">Get Started</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="coach1.html">Coach 1</a></li>
+                <li><a href="coach2.html">Coach 2</a></li>
+                <li><a href="coach3.html">Coach 3</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
+        <!-- Home Section -->
+        <section id="home" class="hero">
             <div class="container hero-content">
-                <h1>Empowering Education Through Coaching</h1>
-                <p>Unlock potential and guide success. Explore the fundamental roles that define effective educational coaching.</p>
-                <a href="#roles" class="btn-primary">Explore Roles</a>
+                <h1>Welcome to the Coaching Experience</h1>
+                <p>This is an example of the home section information. Here you can introduce the general concept of
+                    coaching and its impact on development.</p>
             </div>
-            <div class="hero-background"></div>
         </section>
 
-        <section id="roles" class="roles section-padding">
+        <!-- Roles Summary Section -->
+        <section class="section-padding">
             <div class="container">
-                <div class="section-header">
-                    <h2>The 3 Roles of a Coach</h2>
-                    <p>Master these dimensions to transform your coaching impact.</p>
+                <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                    <h2>Explore the Roles</h2>
+                    <p>Click on a role to learn more about its specific impact.</p>
                 </div>
-                
+
                 <div class="roles-grid">
-                    <!-- Role 1 -->
-                    <div class="role-card">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    <!-- Role 1 Card -->
+                    <a href="coach1.html" class="role-card" style="border-top: 4px solid var(--primary);">
+                        <div class="icon-wrapper" style="color: var(--primary); background: rgba(3, 126, 243, 0.1);">
+                            1
                         </div>
-                        <h3>The Guide</h3>
-                        <p>Provides direction and wisdom. The Guide helps navigate the educational landscape, offering resources and a clear path forward for learners.</p>
-                    </div>
+                        <h3>Coach 1</h3>
+                        <p>Coach 1 is the coach that helps the learner to navigate the educational landscape.</p>
+                        <span class="link-text" style="color: var(--primary);">View Syllabus &rarr;</span>
+                    </a>
 
-                    <!-- Role 2 -->
-                    <div class="role-card">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <!-- Role 2 Card -->
+                    <a href="coach2.html" class="role-card" style="border-top: 4px solid var(--primary);">
+                        <div class="icon-wrapper" style="color: var(--primary); background: rgba(3, 126, 243, 0.1);">
+                            2
                         </div>
-                        <h3>The Motivator</h3>
-                        <p>Ignites passion and resilience. The Motivator encourages perseverance through challenges, celebrating wins and building confidence.</p>
-                    </div>
+                        <h3>Coach 2</h3>
+                        <p>Coach 2 is the coach that helps the learner to navigate the educational landscape.</p>
+                        <span class="link-text" style="color: var(--primary);">View Syllabus &rarr;</span>
+                    </a>
 
-                    <!-- Role 3 -->
-                    <div class="role-card">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                    <!-- Role 3 Card -->
+                    <a href="coach3.html" class="role-card" style="border-top: 4px solid var(--primary);">
+                        <div class="icon-wrapper" style="color: var(--primary); background: rgba(3, 126, 243, 0.1);">
+                            3
                         </div>
-                        <h3>The Strategist</h3>
-                        <p>Analyzes and optimizes. The Strategist helps set actionable goals, tracks progress, and adjusts methods to ensure maximum growth.</p>
-                    </div>
+                        <h3>Coach 3</h3>
+                        <p>Coach 3 is the coach that helps the learner to navigate the educational landscape.</p>
+                        <span class="link-text" style="color: var(--primary);">View Syllabus &rarr;</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -73,10 +80,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 EduCoach Project. Built for Education.</p>
+            <p>&copy; 2025 EduCoach Project. Inspired by Leadership.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
